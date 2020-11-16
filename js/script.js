@@ -2,7 +2,7 @@
 // Stampare a schermo un messaggio all’interno di un h1, utilizzando i data.Bonus: Aggiungere un’immagine presa anch’essa da un data
 // Altro possibile Bonus:
 // gestire una funzione con un evento nel modo Vue.
-var lv;
+
 var app = new Vue({
 
   el: "#container",
@@ -12,21 +12,13 @@ var app = new Vue({
   },
   methods: {
 
-    changeImg: function() {
-      
-
-      if (this.lv === 1){
+    changeImg(i) {
+      if (i === 1){
         this.img = "img/img1.png";
-        this.lv = 1;
-        console.log(this.lv);
-      }else if (this.lv === 2){
-        this.lv = 2;
+      }else if (i === 2){
         this.img = "img/img2.png";
-          console.log(this.lv);
       }else{
-        this.lv = 3;
         this.img = "img/img3.jpg";
-          console.log(this.lv);
       }
     }
   }
