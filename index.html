@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+      <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title></title>
+  </head>
+  <body>
+
+
+
+    <div id="container">
+
+     <h1>{{mex}}</h1>
+
+     <button @click="changeImg">0-2 mesi</button>
+     <button @click="changeImg">3-4 mesi</button>
+     <button @click="changeImg">5-6 mesi</button>
+
+     <div >
+        <img v-bind:src="img" />
+     </div>
+
+    </div>
+
+    <script type="text/javascript"  src="js/script.js" charset="utf-8">
+
+    </script>
+  </body>
+</html>
